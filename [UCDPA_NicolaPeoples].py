@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+
 df_fr=pd.read_csv("fertility_rate.csv.",header=0)
 df_le=pd.read_csv("life_expectancy.csv",header=0)
 
