@@ -19,3 +19,6 @@ df_fr_le=pd.merge(df_fr2,df_le2,left_on='Country Name',right_on='Country Name',h
 print(df_fr_le)
 df_fr_le2=df_fr_le.fillna(method="bfill")
 print(df_fr_le2)
+
+missing_values=df_fr_le2.isnull().sum()
+print(missing_values)
